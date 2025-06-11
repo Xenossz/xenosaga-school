@@ -223,11 +223,6 @@
         /* Profile Section */
         .profile {
             background: #f8f9fa;
-            display: none;
-        }
-
-        .profile.active {
-            display: block;
         }
 
         .profile-grid {
@@ -242,12 +237,23 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
 
         .profile-card h3 {
             color: #667eea;
             margin-bottom: 1rem;
             font-size: 1.5rem;
+        }
+
+        .profile-card p {
+            color: #666;
+            line-height: 1.6;
         }
 
         /* Contact Form */
